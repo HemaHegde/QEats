@@ -1,0 +1,50 @@
+/*
+ *
+ *  * Copyright (c) Crio.Do 2019. All rights reserved
+ *
+ */
+
+package com.crio.qeats;
+
+<<<<<<< HEAD
+import com.mongodb.diagnostics.logging.Logger;
+=======
+>>>>>>> 58123040ff3382a325bdd4a7b25fbe08451da2b9
+import lombok.extern.log4j.Log4j2;
+import org.modelmapper.ModelMapper;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Scope;
+
+@SpringBootApplication
+@Log4j2
+public class QEatsApplication {
+
+  public static void main(String[] args) {
+    SpringApplication.run(QEatsApplication.class, args);
+
+<<<<<<< HEAD
+    // TIP:MODULE_RESTAPI: If your server starts successfully,
+    // you can find the following message in the logs.
+
+=======
+
+    // TIP:MODULE_RESTAPI: If your server starts successfully,
+    // you can find the following message in the logs.
+>>>>>>> 58123040ff3382a325bdd4a7b25fbe08451da2b9
+    log.info("Congrats! Your QEatsApplication server has started");
+  }
+
+  /**
+   * Fetches a ModelMapper instance.
+   *
+   * @return ModelMapper
+   */
+  @Bean // Want a new obj every time
+  @Scope("prototype")
+  public ModelMapper modelMapper() {
+    return new ModelMapper();
+  }
+
+}

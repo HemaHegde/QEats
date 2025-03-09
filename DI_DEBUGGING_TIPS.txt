@@ -1,0 +1,6 @@
+1) Make sure that the class you want to use is part of the SpringContext such that when the class that wants to use it should be able to scan it. 
+
+2) Let Spring handle the creating of the instances and you focus on the business logic.
+
+3) If there are any exceptions that get raised, try to go through the documentation of Spring to figure why the exception is being raised.
+   You are most likely to get a solution if you figure out the reason behind the exception.

@@ -1,0 +1,736 @@
+2019-06-12 13:36:41.447  INFO 16963 --- [restartedMain] com.crio.qeats.QEatsApplication          : Starting QEatsApplication on hegdeabhinav7 with PID 16963 (/home/crio-user/hegdeabhinav7-me_qeats/qeatsbackend/build/classes/java/main started by crio-user in /home/crio-user/hegdeabhinav7-me_qeats)
+2019-06-12 13:36:41.454  INFO 16963 --- [restartedMain] com.crio.qeats.QEatsApplication          : No active profile set, falling back to default profiles: default
+2019-06-12 13:36:41.611  INFO 16963 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-12 13:36:41.612  INFO 16963 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-12 13:36:44.512  INFO 16963 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-12 13:36:44.617  INFO 16963 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96ms. Found 3 repository interfaces.
+2019-06-12 13:36:46.296  INFO 16963 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-12 13:36:46.378  INFO 16963 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-12 13:36:46.379  INFO 16963 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-12 13:36:46.813  INFO 16963 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-12 13:36:46.814 DEBUG 16963 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-12 13:36:46.815  INFO 16963 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5197 ms
+2019-06-12 13:36:47.707  INFO 16963 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-12 13:36:47.864  INFO 16963 --- [cluster-ClusterId{value='5d00b29776c72742432bc74e', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+2019-06-12 13:36:47.880  INFO 16963 --- [cluster-ClusterId{value='5d00b29776c72742432bc74e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6569095}
+2019-06-12 13:36:48.570  INFO 16963 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-12 13:36:49.400 TRACE 16963 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.q.c.RestaurantController:
+	{GET /qeats/v1/restaurants}: getRestaurants(GetRestaurantsRequest)
+2019-06-12 13:36:49.420 TRACE 16963 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+2019-06-12 13:36:49.428 TRACE 16963 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+2019-06-12 13:36:49.440 DEBUG 16963 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-06-12 13:36:49.544  INFO 16963 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-12 13:36:49.784  INFO 16963 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-06-12 13:36:49.869 TRACE 16963 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-06-12 13:36:49.871 DEBUG 16963 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-12 13:36:49.961  INFO 16963 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-12 13:36:49.991 DEBUG 16963 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-12 13:36:50.053 DEBUG 16963 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2019-06-12 13:36:50.062 TRACE 16963 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-06-12 13:36:50.063 TRACE 16963 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-06-12 13:36:50.063 DEBUG 16963 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-06-12 13:36:50.109 DEBUG 16963 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-12 13:36:50.564  INFO 16963 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-06-12 13:36:50.599  INFO 16963 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-06-12 13:36:50.648  INFO 16963 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-06-12 13:36:50.967  INFO 16963 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2019-06-12 13:36:50.977  INFO 16963 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2019-06-12 13:36:50.987  INFO 16963 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2019-06-12 13:36:51.154  INFO 16963 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-06-12 13:36:51.162  INFO 16963 --- [restartedMain] com.crio.qeats.QEatsApplication          : Started QEatsApplication in 10.633 seconds (JVM running for 11.416)
+2019-06-12 13:36:51.197  INFO 16963 --- [restartedMain] com.crio.qeats.QEatsApplication          : Congrats! Your QEatsApplication server has started
+2019-06-12 13:38:28.029  INFO 16963 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-12 13:38:28.030  INFO 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-12 13:38:28.030 TRACE 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@17563dab
+2019-06-12 13:38:28.039 TRACE 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-06-12 13:38:28.042 TRACE 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-06-12 13:38:28.049 TRACE 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-06-12 13:38:28.055 TRACE 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-06-12 13:38:28.055 DEBUG 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-06-12 13:38:28.055  INFO 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-06-12 13:38:28.080 TRACE 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=tamil", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 13:38:28.095 TRACE 16963 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 13:38:28.139 TRACE 16963 --- [http-nio-8081-exec-2] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=tamil)]
+2019-06-12 13:38:28.145  INFO 16963 --- [http-nio-8081-exec-2] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=tamil)
+2019-06-12 13:38:28.269  INFO 16963 --- [http-nio-8081-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:27017
+2019-06-12 13:38:31.066  INFO 16963 --- [http-nio-8081-exec-2] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@4cbfdffd, com.crio.qeats.dto.Restaurant@15bdde26, com.crio.qeats.dto.Restaurant@321363e, com.crio.qeats.dto.Restaurant@4a208654, com.crio.qeats.dto.Restaurant@7852f8da, com.crio.qeats.dto.Restaurant@3655518, com.crio.qeats.dto.Restaurant@97f038c, com.crio.qeats.dto.Restaurant@472326d1, com.crio.qeats.dto.Restaurant@285882c7, com.crio.qeats.dto.Restaurant@1bcdf41, com.crio.qeats.dto.Restaurant@70aedf99, com.crio.qeats.dto.Restaurant@2e656af3])
+2019-06-12 13:38:31.108 DEBUG 16963 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 13:38:31.110 TRACE 16963 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@4cbfdffd, com.crio.qeats.dto.Restaurant@15bdde26, com.crio.qeats.dto.Restaurant@321363e, com.crio.qeats.dto.Restaurant@4a208654, com.crio.qeats.dto.Restaurant@7852f8da, com.crio.qeats.dto.Restaurant@3655518, com.crio.qeats.dto.Restaurant@97f038c, com.crio.qeats.dto.Restaurant@472326d1, com.crio.qeats.dto.Restaurant@285882c7, com.crio.qeats.dto.Restaurant@1bcdf41, com.crio.qeats.dto.Restaurant@70aedf99, com.crio.qeats.dto.Restaurant@2e656af3])]
+2019-06-12 13:38:31.164 TRACE 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 13:38:31.166 DEBUG 16963 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 13:43:11.103  INFO 16963 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-12 13:43:11.162  INFO 16963 --- [Thread-5] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:3}] to localhost:27017 because the pool has been closed.
+2019-06-12 13:43:12.465  INFO 16963 --- [restartedMain] com.crio.qeats.QEatsApplication          : Starting QEatsApplication on hegdeabhinav7 with PID 16963 (/home/crio-user/hegdeabhinav7-me_qeats/qeatsbackend/build/classes/java/main started by crio-user in /home/crio-user/hegdeabhinav7-me_qeats)
+2019-06-12 13:43:12.472  INFO 16963 --- [restartedMain] com.crio.qeats.QEatsApplication          : No active profile set, falling back to default profiles: default
+2019-06-12 13:43:15.150  INFO 16963 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-12 13:43:15.227  INFO 16963 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 3 repository interfaces.
+2019-06-12 13:43:15.971  INFO 16963 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-12 13:43:15.980  INFO 16963 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-12 13:43:15.984  INFO 16963 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-12 13:43:16.039  INFO 16963 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-12 13:43:16.058 DEBUG 16963 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-12 13:43:16.059  INFO 16963 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3572 ms
+2019-06-12 13:43:16.555  INFO 16963 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-12 13:43:16.591  INFO 16963 --- [cluster-ClusterId{value='5d00b41c76c72742432bc74f', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:4}] to localhost:27017
+2019-06-12 13:43:16.630  INFO 16963 --- [cluster-ClusterId{value='5d00b41c76c72742432bc74f', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=930816}
+2019-06-12 13:43:17.720  INFO 16963 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-12 13:43:17.738  WARN 16963 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restaurantController': Unsatisfied dependency expressed through field 'restaurantService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.crio.qeats.services.RestaurantService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-06-12 13:43:17.777  INFO 16963 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-06-12 13:43:17.844  INFO 16963 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-12 13:43:19.253 ERROR 16963 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restaurantService in com.crio.qeats.controller.RestaurantController required a bean of type 'com.crio.qeats.services.RestaurantService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.crio.qeats.services.RestaurantService' in your configuration.
+
+2019-06-12 13:43:22.923  INFO 18291 --- [restartedMain] com.crio.qeats.QEatsApplication          : Starting QEatsApplication on hegdeabhinav7 with PID 18291 (/home/crio-user/hegdeabhinav7-me_qeats/qeatsbackend/build/classes/java/main started by crio-user in /home/crio-user/hegdeabhinav7-me_qeats)
+2019-06-12 13:43:22.961  INFO 18291 --- [restartedMain] com.crio.qeats.QEatsApplication          : No active profile set, falling back to default profiles: default
+2019-06-12 13:43:23.316  INFO 18291 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-12 13:43:23.320  INFO 18291 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-12 13:43:29.835  INFO 18291 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-12 13:43:29.987  INFO 18291 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141ms. Found 3 repository interfaces.
+2019-06-12 13:43:31.774  INFO 18291 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-12 13:43:31.859  INFO 18291 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-12 13:43:31.860  INFO 18291 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-12 13:43:32.325  INFO 18291 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-12 13:43:32.326 DEBUG 18291 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-12 13:43:32.327  INFO 18291 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9005 ms
+2019-06-12 13:43:33.379  INFO 18291 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-12 13:43:33.608  INFO 18291 --- [cluster-ClusterId{value='5d00b42d76c72747737e78ea', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:5}] to localhost:27017
+2019-06-12 13:43:33.635  INFO 18291 --- [cluster-ClusterId{value='5d00b42d76c72747737e78ea', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10872033}
+2019-06-12 13:43:34.423  WARN 18291 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-06-12 13:43:35.280 TRACE 18291 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.q.c.RestaurantController:
+	{GET /qeats/v1/restaurants}: getRestaurants(GetRestaurantsRequest)
+2019-06-12 13:43:35.296 TRACE 18291 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+2019-06-12 13:43:35.308 TRACE 18291 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+2019-06-12 13:43:35.325 DEBUG 18291 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-06-12 13:43:35.457  INFO 18291 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-12 13:43:35.693  INFO 18291 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-06-12 13:43:35.792 TRACE 18291 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-06-12 13:43:35.801 DEBUG 18291 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-12 13:43:35.911  INFO 18291 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-12 13:43:35.947 DEBUG 18291 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-12 13:43:36.066 DEBUG 18291 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2019-06-12 13:43:36.078 TRACE 18291 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-06-12 13:43:36.079 TRACE 18291 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-06-12 13:43:36.079 DEBUG 18291 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-06-12 13:43:36.101 DEBUG 18291 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-12 13:43:36.536  INFO 18291 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-06-12 13:43:36.579  INFO 18291 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-06-12 13:43:36.642  INFO 18291 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-06-12 13:43:37.024  INFO 18291 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2019-06-12 13:43:37.032  INFO 18291 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2019-06-12 13:43:37.044  INFO 18291 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2019-06-12 13:43:37.275  INFO 18291 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-06-12 13:43:37.282  INFO 18291 --- [restartedMain] com.crio.qeats.QEatsApplication          : Started QEatsApplication in 16.183 seconds (JVM running for 18.483)
+2019-06-12 13:43:37.310  INFO 18291 --- [restartedMain] com.crio.qeats.QEatsApplication          : Congrats! Your QEatsApplication server has started
+2019-06-12 13:43:51.744  INFO 18392 --- [restartedMain] com.crio.qeats.QEatsApplication          : Starting QEatsApplication on hegdeabhinav7 with PID 18392 (/home/crio-user/hegdeabhinav7-me_qeats/qeatsbackend/build/classes/java/main started by crio-user in /home/crio-user/hegdeabhinav7-me_qeats)
+2019-06-12 13:43:51.758  INFO 18392 --- [restartedMain] com.crio.qeats.QEatsApplication          : No active profile set, falling back to default profiles: default
+2019-06-12 13:43:51.918  INFO 18392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-12 13:43:51.919  INFO 18392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-12 13:43:54.915  INFO 18392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-12 13:43:55.031  INFO 18392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 3 repository interfaces.
+2019-06-12 13:43:56.628  INFO 18392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-12 13:43:56.679  INFO 18392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-12 13:43:56.680  INFO 18392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-12 13:43:57.067  INFO 18392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-12 13:43:57.068 DEBUG 18392 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-12 13:43:57.070  INFO 18392 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5150 ms
+2019-06-12 13:43:58.074  INFO 18392 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-12 13:43:58.256  INFO 18392 --- [cluster-ClusterId{value='5d00b44676c72747d89578b0', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:6}] to localhost:27017
+2019-06-12 13:43:58.269  INFO 18392 --- [cluster-ClusterId{value='5d00b44676c72747d89578b0', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8492023}
+2019-06-12 13:43:58.921  INFO 18392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-12 13:43:59.919 TRACE 18392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.q.c.RestaurantController:
+	{GET /qeats/v1/restaurants}: getRestaurants(GetRestaurantsRequest)
+2019-06-12 13:43:59.936 TRACE 18392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+2019-06-12 13:43:59.948 TRACE 18392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+2019-06-12 13:43:59.963 DEBUG 18392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-06-12 13:44:00.069  INFO 18392 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-12 13:44:00.404  INFO 18392 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-06-12 13:44:00.489 TRACE 18392 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-06-12 13:44:00.490 DEBUG 18392 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-12 13:44:00.563  INFO 18392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-12 13:44:00.590 DEBUG 18392 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-12 13:44:00.639 DEBUG 18392 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2019-06-12 13:44:00.671 TRACE 18392 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-06-12 13:44:00.676 TRACE 18392 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-06-12 13:44:00.676 DEBUG 18392 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-06-12 13:44:00.695 DEBUG 18392 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-12 13:44:01.426  INFO 18392 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-06-12 13:44:01.502  INFO 18392 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-06-12 13:44:01.549  INFO 18392 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-06-12 13:44:01.942  INFO 18392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2019-06-12 13:44:01.956  INFO 18392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2019-06-12 13:44:01.980  INFO 18392 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2019-06-12 13:44:02.161 ERROR 18392 --- [restartedMain] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8081]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.crio.qeats.QEatsApplication.main(QEatsApplication.java:17) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_212]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_212]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_212]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_212]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_212]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_212]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_212]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_212]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_212]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	... 19 common frames omitted
+
+2019-06-12 13:44:02.207  INFO 18392 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-06-12 13:44:02.224  WARN 18392 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='5d00b44676c72747d89578b0', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.lang.Thread.run(Thread.java:748)
+2019-06-12 13:44:02.232  WARN 18392 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [CleanCursors-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019-06-12 13:44:02.276  INFO 18392 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-12 13:44:02.290 ERROR 18392 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2019-06-12 13:44:02.374  INFO 18392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-12 13:45:46.075  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : Starting QEatsApplication on hegdeabhinav7 with PID 18569 (/home/crio-user/hegdeabhinav7-me_qeats/qeatsbackend/build/classes/java/main started by crio-user in /home/crio-user/hegdeabhinav7-me_qeats)
+2019-06-12 13:45:46.090  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : No active profile set, falling back to default profiles: default
+2019-06-12 13:45:46.262  INFO 18569 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-12 13:45:46.262  INFO 18569 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-12 13:45:49.074  INFO 18569 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-12 13:45:49.222  INFO 18569 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135ms. Found 3 repository interfaces.
+2019-06-12 13:45:50.762  INFO 18569 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-12 13:45:50.850  INFO 18569 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-12 13:45:50.851  INFO 18569 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-12 13:45:51.241  INFO 18569 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-12 13:45:51.242 DEBUG 18569 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-12 13:45:51.243  INFO 18569 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4980 ms
+2019-06-12 13:45:51.909  INFO 18569 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-12 13:45:52.101  INFO 18569 --- [cluster-ClusterId{value='5d00b4b776c727488947cf94', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2019-06-12 13:45:52.125  INFO 18569 --- [cluster-ClusterId{value='5d00b4b776c727488947cf94', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20210180}
+2019-06-12 13:45:52.971  INFO 18569 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-12 13:45:53.913 TRACE 18569 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.q.c.RestaurantController:
+	{GET /qeats/v1/restaurants}: getRestaurants(GetRestaurantsRequest)
+2019-06-12 13:45:53.929 TRACE 18569 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+2019-06-12 13:45:53.945 TRACE 18569 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+2019-06-12 13:45:53.952 DEBUG 18569 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-06-12 13:45:54.053  INFO 18569 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-12 13:45:54.204  INFO 18569 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-06-12 13:45:54.318 TRACE 18569 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-06-12 13:45:54.320 DEBUG 18569 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-12 13:45:54.421  INFO 18569 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-12 13:45:54.452 DEBUG 18569 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-12 13:45:54.540 DEBUG 18569 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2019-06-12 13:45:54.566 TRACE 18569 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-06-12 13:45:54.572 TRACE 18569 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-06-12 13:45:54.573 DEBUG 18569 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-06-12 13:45:54.590 DEBUG 18569 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-12 13:45:55.047  INFO 18569 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-06-12 13:45:55.084  INFO 18569 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-06-12 13:45:55.134  INFO 18569 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-06-12 13:45:55.435  INFO 18569 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2019-06-12 13:45:55.448  INFO 18569 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2019-06-12 13:45:55.456  INFO 18569 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2019-06-12 13:45:55.633  INFO 18569 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-06-12 13:45:55.637  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : Started QEatsApplication in 10.637 seconds (JVM running for 11.601)
+2019-06-12 13:45:55.668  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : Congrats! Your QEatsApplication server has started
+2019-06-12 13:46:01.862  INFO 18569 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-12 13:46:01.864  INFO 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-12 13:46:01.866 TRACE 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@3ef29d02
+2019-06-12 13:46:01.871 TRACE 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-06-12 13:46:01.874 TRACE 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-06-12 13:46:01.889 TRACE 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-06-12 13:46:01.898 TRACE 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-06-12 13:46:01.899 DEBUG 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-06-12 13:46:01.900  INFO 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2019-06-12 13:46:01.938 TRACE 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=tamil", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 13:46:01.983 TRACE 18569 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 13:46:02.046 TRACE 18569 --- [http-nio-8081-exec-2] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=tamil)]
+2019-06-12 13:46:02.051  INFO 18569 --- [http-nio-8081-exec-2] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=tamil)
+2019-06-12 13:46:02.524  INFO 18569 --- [http-nio-8081-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2019-06-12 13:46:04.202  INFO 18569 --- [http-nio-8081-exec-2] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@25f33cf, com.crio.qeats.dto.Restaurant@2768cd67, com.crio.qeats.dto.Restaurant@1a74cbc5, com.crio.qeats.dto.Restaurant@72e303d3, com.crio.qeats.dto.Restaurant@9d9870b, com.crio.qeats.dto.Restaurant@68bb60a2, com.crio.qeats.dto.Restaurant@54adb493, com.crio.qeats.dto.Restaurant@3e3ac84e, com.crio.qeats.dto.Restaurant@7b9ee15d, com.crio.qeats.dto.Restaurant@481330fc, com.crio.qeats.dto.Restaurant@71a30c41, com.crio.qeats.dto.Restaurant@19b3c283])
+2019-06-12 13:46:04.273 DEBUG 18569 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 13:46:04.275 TRACE 18569 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@25f33cf, com.crio.qeats.dto.Restaurant@2768cd67, com.crio.qeats.dto.Restaurant@1a74cbc5, com.crio.qeats.dto.Restaurant@72e303d3, com.crio.qeats.dto.Restaurant@9d9870b, com.crio.qeats.dto.Restaurant@68bb60a2, com.crio.qeats.dto.Restaurant@54adb493, com.crio.qeats.dto.Restaurant@3e3ac84e, com.crio.qeats.dto.Restaurant@7b9ee15d, com.crio.qeats.dto.Restaurant@481330fc, com.crio.qeats.dto.Restaurant@71a30c41, com.crio.qeats.dto.Restaurant@19b3c283])]
+2019-06-12 13:46:04.338 TRACE 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 13:46:04.340 DEBUG 18569 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 14:09:00.291 TRACE 18569 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=al", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 14:09:00.301 TRACE 18569 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 14:09:00.309 TRACE 18569 --- [http-nio-8081-exec-5] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=al)]
+2019-06-12 14:09:00.311  INFO 18569 --- [http-nio-8081-exec-5] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=al)
+2019-06-12 14:09:01.788  INFO 18569 --- [http-nio-8081-exec-5] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@541225eb, com.crio.qeats.dto.Restaurant@af9d52b, com.crio.qeats.dto.Restaurant@1faf8ef8, com.crio.qeats.dto.Restaurant@2a88171e, com.crio.qeats.dto.Restaurant@6ff042d9, com.crio.qeats.dto.Restaurant@2be48281, com.crio.qeats.dto.Restaurant@485f014b, com.crio.qeats.dto.Restaurant@2285cfb9, com.crio.qeats.dto.Restaurant@4f0ea7ba, com.crio.qeats.dto.Restaurant@4071d450, com.crio.qeats.dto.Restaurant@7014c04c, com.crio.qeats.dto.Restaurant@7ce021f0, com.crio.qeats.dto.Restaurant@46e97aa1, com.crio.qeats.dto.Restaurant@874e578, com.crio.qeats.dto.Restaurant@5e34429a, com.crio.qeats.dto.Restaurant@2326170d, com.crio.qeats.dto.Restaurant@2e975dba, com.crio.qeats.dto.Restaurant@1e73235, com.crio.qeats.dto.Restaurant@7dbb9001, com.crio.qeats.dto.Restaurant@6e366ec4, com.crio.qeats.dto.Restaurant@7a588435, com.crio.qeats.dto.Restaurant@429677d1, com.crio.qeats.dto.Restaurant@638cdc1a, com.crio.qeats.dto.Restaurant@3e91dee1, com.crio.qeats.dto.Restaurant@d68c2a, com.crio.qeats.dto.Restaurant@710f5b1e, com.crio.qeats.dto.Restaurant@74662529, com.crio.qeats.dto.Restaurant@44b08b92, com.crio.qeats.dto.Restaurant@70b3e8f2, com.crio.qeats.dto.Restaurant@7bef8a51, com.crio.qeats.dto.Restaurant@3e65a768, com.crio.qeats.dto.Restaurant@7e49472d, com.crio.qeats.dto.Restaurant@11d2c46e])
+2019-06-12 14:09:01.790 DEBUG 18569 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 14:09:01.791 TRACE 18569 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@541225eb, com.crio.qeats.dto.Restaurant@af9d52b, com.crio.qeats.dto.Restaurant@1faf8ef8, com.crio.qeats.dto.Restaurant@2a88171e, com.crio.qeats.dto.Restaurant@6ff042d9, com.crio.qeats.dto.Restaurant@2be48281, com.crio.qeats.dto.Restaurant@485f014b, com.crio.qeats.dto.Restaurant@2285cfb9, com.crio.qeats.dto.Restaurant@4f0ea7ba, com.crio.qeats.dto.Restaurant@4071d450, com.crio.qeats.dto.Restaurant@7014c04c, com.crio.qeats.dto.Restaurant@7ce021f0, com.crio.qeats.dto.Restaurant@46e97aa1, com.crio.qeats.dto.Restaurant@874e578, com.crio.qeats.dto.Restaurant@5e34429a, com.crio.qeats.dto.Restaurant@2326170d, com.crio.qeats.dto.Restaurant@2e975dba, com.crio.qeats.dto.Restaurant@1e73235, com.crio.qeats.dto.Restaurant@7dbb9001, com.crio.qeats.dto.Restaurant@6e366ec4, com.crio.qeats.dto.Restaurant@7a588435, com.crio.qeats.dto.Restaurant@429677d1, com.crio.qeats.dto.Restaurant@638cdc1a, com.crio.qeats.dto.Restaurant@3e91dee1, com.crio.qeats.dto.Restaurant@d68c2a, com.crio.qeats.dto.Restaurant@710f5b1e, com.crio.qeats.dto.Restaurant@74662529, com.crio.qeats.dto.Restaurant@44b08b92, com.crio.qeats.dto.Restaurant@70b3e8f2, com.crio.qeats.dto.Restaurant@7bef8a51, com.crio.qeats.dto.Restaurant@3e65a768, com.crio.qeats.dto.Restaurant@7e49472d, com.crio.qeats.dto.Restaurant@11d2c46e])]
+2019-06-12 14:09:01.801 TRACE 18569 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 14:09:01.803 DEBUG 18569 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 14:09:46.257 TRACE 18569 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=north", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 14:09:46.260 TRACE 18569 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 14:09:46.263 TRACE 18569 --- [http-nio-8081-exec-6] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=north)]
+2019-06-12 14:09:46.264  INFO 18569 --- [http-nio-8081-exec-6] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=north)
+2019-06-12 14:09:47.299  INFO 18569 --- [http-nio-8081-exec-6] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@72db791b, com.crio.qeats.dto.Restaurant@32b38252, com.crio.qeats.dto.Restaurant@133a2b0b, com.crio.qeats.dto.Restaurant@2633600d, com.crio.qeats.dto.Restaurant@f09d671, com.crio.qeats.dto.Restaurant@218664d0, com.crio.qeats.dto.Restaurant@63a67198, com.crio.qeats.dto.Restaurant@5e2846e9, com.crio.qeats.dto.Restaurant@1fd3b903, com.crio.qeats.dto.Restaurant@d61eecd, com.crio.qeats.dto.Restaurant@5d1b6448, com.crio.qeats.dto.Restaurant@41986e0c, com.crio.qeats.dto.Restaurant@4381dc9d, com.crio.qeats.dto.Restaurant@411445a6, com.crio.qeats.dto.Restaurant@472b40e8, com.crio.qeats.dto.Restaurant@4541be0f, com.crio.qeats.dto.Restaurant@869e70e, com.crio.qeats.dto.Restaurant@6b33aad0, com.crio.qeats.dto.Restaurant@76828b5e, com.crio.qeats.dto.Restaurant@3e7be247, com.crio.qeats.dto.Restaurant@796d3311, com.crio.qeats.dto.Restaurant@ffe63c6, com.crio.qeats.dto.Restaurant@6dc4c11c, com.crio.qeats.dto.Restaurant@ccc6f39, com.crio.qeats.dto.Restaurant@1ca9300a, com.crio.qeats.dto.Restaurant@60b5800a, com.crio.qeats.dto.Restaurant@2bb27121, com.crio.qeats.dto.Restaurant@44e866c9, com.crio.qeats.dto.Restaurant@1194373e, com.crio.qeats.dto.Restaurant@5d6d40d6, com.crio.qeats.dto.Restaurant@65ee1923, com.crio.qeats.dto.Restaurant@62b7e579, com.crio.qeats.dto.Restaurant@52aa13d6])
+2019-06-12 14:09:47.302 DEBUG 18569 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 14:09:47.307 TRACE 18569 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@72db791b, com.crio.qeats.dto.Restaurant@32b38252, com.crio.qeats.dto.Restaurant@133a2b0b, com.crio.qeats.dto.Restaurant@2633600d, com.crio.qeats.dto.Restaurant@f09d671, com.crio.qeats.dto.Restaurant@218664d0, com.crio.qeats.dto.Restaurant@63a67198, com.crio.qeats.dto.Restaurant@5e2846e9, com.crio.qeats.dto.Restaurant@1fd3b903, com.crio.qeats.dto.Restaurant@d61eecd, com.crio.qeats.dto.Restaurant@5d1b6448, com.crio.qeats.dto.Restaurant@41986e0c, com.crio.qeats.dto.Restaurant@4381dc9d, com.crio.qeats.dto.Restaurant@411445a6, com.crio.qeats.dto.Restaurant@472b40e8, com.crio.qeats.dto.Restaurant@4541be0f, com.crio.qeats.dto.Restaurant@869e70e, com.crio.qeats.dto.Restaurant@6b33aad0, com.crio.qeats.dto.Restaurant@76828b5e, com.crio.qeats.dto.Restaurant@3e7be247, com.crio.qeats.dto.Restaurant@796d3311, com.crio.qeats.dto.Restaurant@ffe63c6, com.crio.qeats.dto.Restaurant@6dc4c11c, com.crio.qeats.dto.Restaurant@ccc6f39, com.crio.qeats.dto.Restaurant@1ca9300a, com.crio.qeats.dto.Restaurant@60b5800a, com.crio.qeats.dto.Restaurant@2bb27121, com.crio.qeats.dto.Restaurant@44e866c9, com.crio.qeats.dto.Restaurant@1194373e, com.crio.qeats.dto.Restaurant@5d6d40d6, com.crio.qeats.dto.Restaurant@65ee1923, com.crio.qeats.dto.Restaurant@62b7e579, com.crio.qeats.dto.Restaurant@52aa13d6])]
+2019-06-12 14:09:47.324 TRACE 18569 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 14:09:47.325 DEBUG 18569 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 14:13:26.763 TRACE 18569 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=north", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 14:13:26.767 TRACE 18569 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 14:13:26.769 TRACE 18569 --- [http-nio-8081-exec-9] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=north)]
+2019-06-12 14:13:26.769  INFO 18569 --- [http-nio-8081-exec-9] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=north)
+2019-06-12 14:13:28.053  INFO 18569 --- [http-nio-8081-exec-9] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@26c0d7b, com.crio.qeats.dto.Restaurant@3ba79ebd, com.crio.qeats.dto.Restaurant@3b344ab2, com.crio.qeats.dto.Restaurant@67762a82, com.crio.qeats.dto.Restaurant@513e4c2, com.crio.qeats.dto.Restaurant@2c6d0ab, com.crio.qeats.dto.Restaurant@1b3e6b9b, com.crio.qeats.dto.Restaurant@4d4a6044, com.crio.qeats.dto.Restaurant@5765b8db, com.crio.qeats.dto.Restaurant@63126914, com.crio.qeats.dto.Restaurant@b18a45e, com.crio.qeats.dto.Restaurant@15cebd39, com.crio.qeats.dto.Restaurant@6f977c3b, com.crio.qeats.dto.Restaurant@1fbdf214, com.crio.qeats.dto.Restaurant@51c98fe9, com.crio.qeats.dto.Restaurant@318ec79c, com.crio.qeats.dto.Restaurant@65ac0332, com.crio.qeats.dto.Restaurant@15f160c1, com.crio.qeats.dto.Restaurant@8da0351, com.crio.qeats.dto.Restaurant@4faf97f1, com.crio.qeats.dto.Restaurant@4a9fa8a5, com.crio.qeats.dto.Restaurant@54763e5f, com.crio.qeats.dto.Restaurant@c6e7f0b, com.crio.qeats.dto.Restaurant@3fcd6168, com.crio.qeats.dto.Restaurant@8a03cb4, com.crio.qeats.dto.Restaurant@6dc16f39, com.crio.qeats.dto.Restaurant@12a8d3ad, com.crio.qeats.dto.Restaurant@463a26b1, com.crio.qeats.dto.Restaurant@4ff6e75e, com.crio.qeats.dto.Restaurant@2928f13e, com.crio.qeats.dto.Restaurant@7dc97a0d, com.crio.qeats.dto.Restaurant@6ad1c4ab, com.crio.qeats.dto.Restaurant@12e502b8])
+2019-06-12 14:13:28.054 DEBUG 18569 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 14:13:28.055 TRACE 18569 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@26c0d7b, com.crio.qeats.dto.Restaurant@3ba79ebd, com.crio.qeats.dto.Restaurant@3b344ab2, com.crio.qeats.dto.Restaurant@67762a82, com.crio.qeats.dto.Restaurant@513e4c2, com.crio.qeats.dto.Restaurant@2c6d0ab, com.crio.qeats.dto.Restaurant@1b3e6b9b, com.crio.qeats.dto.Restaurant@4d4a6044, com.crio.qeats.dto.Restaurant@5765b8db, com.crio.qeats.dto.Restaurant@63126914, com.crio.qeats.dto.Restaurant@b18a45e, com.crio.qeats.dto.Restaurant@15cebd39, com.crio.qeats.dto.Restaurant@6f977c3b, com.crio.qeats.dto.Restaurant@1fbdf214, com.crio.qeats.dto.Restaurant@51c98fe9, com.crio.qeats.dto.Restaurant@318ec79c, com.crio.qeats.dto.Restaurant@65ac0332, com.crio.qeats.dto.Restaurant@15f160c1, com.crio.qeats.dto.Restaurant@8da0351, com.crio.qeats.dto.Restaurant@4faf97f1, com.crio.qeats.dto.Restaurant@4a9fa8a5, com.crio.qeats.dto.Restaurant@54763e5f, com.crio.qeats.dto.Restaurant@c6e7f0b, com.crio.qeats.dto.Restaurant@3fcd6168, com.crio.qeats.dto.Restaurant@8a03cb4, com.crio.qeats.dto.Restaurant@6dc16f39, com.crio.qeats.dto.Restaurant@12a8d3ad, com.crio.qeats.dto.Restaurant@463a26b1, com.crio.qeats.dto.Restaurant@4ff6e75e, com.crio.qeats.dto.Restaurant@2928f13e, com.crio.qeats.dto.Restaurant@7dc97a0d, com.crio.qeats.dto.Restaurant@6ad1c4ab, com.crio.qeats.dto.Restaurant@12e502b8])]
+2019-06-12 14:13:28.058 TRACE 18569 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 14:13:28.058 DEBUG 18569 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 14:13:42.324 TRACE 18569 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=baba", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 14:13:42.329 TRACE 18569 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 14:13:42.334 TRACE 18569 --- [http-nio-8081-exec-10] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=baba)]
+2019-06-12 14:13:42.346  INFO 18569 --- [http-nio-8081-exec-10] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=baba)
+2019-06-12 14:13:43.013  INFO 18569 --- [http-nio-8081-exec-10] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@1d2e5367, com.crio.qeats.dto.Restaurant@6e1710f7, com.crio.qeats.dto.Restaurant@3f6eff79, com.crio.qeats.dto.Restaurant@f84a3de, com.crio.qeats.dto.Restaurant@60de6c22, com.crio.qeats.dto.Restaurant@36185866, com.crio.qeats.dto.Restaurant@7ec5fceb, com.crio.qeats.dto.Restaurant@54f53abe, com.crio.qeats.dto.Restaurant@47d9e37e, com.crio.qeats.dto.Restaurant@33f6588b, com.crio.qeats.dto.Restaurant@6285c8ba, com.crio.qeats.dto.Restaurant@1fd83e9e, com.crio.qeats.dto.Restaurant@1792fc08, com.crio.qeats.dto.Restaurant@16a1cc71, com.crio.qeats.dto.Restaurant@5aad1607, com.crio.qeats.dto.Restaurant@4dfef02, com.crio.qeats.dto.Restaurant@42d312d, com.crio.qeats.dto.Restaurant@1cf7b79d, com.crio.qeats.dto.Restaurant@2e58872a, com.crio.qeats.dto.Restaurant@5584ca1c, com.crio.qeats.dto.Restaurant@384d2dd8, com.crio.qeats.dto.Restaurant@19a72e13, com.crio.qeats.dto.Restaurant@73ac9bda, com.crio.qeats.dto.Restaurant@8b6b99, com.crio.qeats.dto.Restaurant@5179b5bd, com.crio.qeats.dto.Restaurant@718ede37, com.crio.qeats.dto.Restaurant@66ebe997, com.crio.qeats.dto.Restaurant@3de79170, com.crio.qeats.dto.Restaurant@21af0f2c, com.crio.qeats.dto.Restaurant@26d71248, com.crio.qeats.dto.Restaurant@1f49e054, com.crio.qeats.dto.Restaurant@1ea49edc, com.crio.qeats.dto.Restaurant@472b344b])
+2019-06-12 14:13:43.015 DEBUG 18569 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 14:13:43.015 TRACE 18569 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@1d2e5367, com.crio.qeats.dto.Restaurant@6e1710f7, com.crio.qeats.dto.Restaurant@3f6eff79, com.crio.qeats.dto.Restaurant@f84a3de, com.crio.qeats.dto.Restaurant@60de6c22, com.crio.qeats.dto.Restaurant@36185866, com.crio.qeats.dto.Restaurant@7ec5fceb, com.crio.qeats.dto.Restaurant@54f53abe, com.crio.qeats.dto.Restaurant@47d9e37e, com.crio.qeats.dto.Restaurant@33f6588b, com.crio.qeats.dto.Restaurant@6285c8ba, com.crio.qeats.dto.Restaurant@1fd83e9e, com.crio.qeats.dto.Restaurant@1792fc08, com.crio.qeats.dto.Restaurant@16a1cc71, com.crio.qeats.dto.Restaurant@5aad1607, com.crio.qeats.dto.Restaurant@4dfef02, com.crio.qeats.dto.Restaurant@42d312d, com.crio.qeats.dto.Restaurant@1cf7b79d, com.crio.qeats.dto.Restaurant@2e58872a, com.crio.qeats.dto.Restaurant@5584ca1c, com.crio.qeats.dto.Restaurant@384d2dd8, com.crio.qeats.dto.Restaurant@19a72e13, com.crio.qeats.dto.Restaurant@73ac9bda, com.crio.qeats.dto.Restaurant@8b6b99, com.crio.qeats.dto.Restaurant@5179b5bd, com.crio.qeats.dto.Restaurant@718ede37, com.crio.qeats.dto.Restaurant@66ebe997, com.crio.qeats.dto.Restaurant@3de79170, com.crio.qeats.dto.Restaurant@21af0f2c, com.crio.qeats.dto.Restaurant@26d71248, com.crio.qeats.dto.Restaurant@1f49e054, com.crio.qeats.dto.Restaurant@1ea49edc, com.crio.qeats.dto.Restaurant@472b344b])]
+2019-06-12 14:13:43.018 TRACE 18569 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 14:13:43.019 DEBUG 18569 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 14:17:05.058  INFO 18569 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-12 14:17:05.083  INFO 18569 --- [Thread-5] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:8}] to localhost:27017 because the pool has been closed.
+2019-06-12 14:17:05.906  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : Starting QEatsApplication on hegdeabhinav7 with PID 18569 (/home/crio-user/hegdeabhinav7-me_qeats/qeatsbackend/build/classes/java/main started by crio-user in /home/crio-user/hegdeabhinav7-me_qeats)
+2019-06-12 14:17:05.915  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : No active profile set, falling back to default profiles: default
+2019-06-12 14:17:07.024  INFO 18569 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-12 14:17:07.129  INFO 18569 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97ms. Found 3 repository interfaces.
+2019-06-12 14:17:07.670  INFO 18569 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-12 14:17:07.690  INFO 18569 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-12 14:17:07.696  INFO 18569 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-12 14:17:07.728  INFO 18569 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-12 14:17:07.729 DEBUG 18569 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-12 14:17:07.730  INFO 18569 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1802 ms
+2019-06-12 14:17:07.974  INFO 18569 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-12 14:17:07.992  INFO 18569 --- [cluster-ClusterId{value='5d00bc0b76c727488947cf95', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:9}] to localhost:27017
+2019-06-12 14:17:08.004  INFO 18569 --- [cluster-ClusterId{value='5d00bc0b76c727488947cf95', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3955787}
+2019-06-12 14:17:08.509  INFO 18569 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-12 14:17:08.542  WARN 18569 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restaurantController': Unsatisfied dependency expressed through field 'restaurantService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.crio.qeats.services.RestaurantService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-06-12 14:17:08.556  INFO 18569 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-06-12 14:17:08.576  INFO 18569 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-12 14:17:09.136 ERROR 18569 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restaurantService in com.crio.qeats.controller.RestaurantController required a bean of type 'com.crio.qeats.services.RestaurantService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.crio.qeats.services.RestaurantService' in your configuration.
+
+2019-06-12 15:29:04.307  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : Starting QEatsApplication on hegdeabhinav7 with PID 18569 (/home/crio-user/hegdeabhinav7-me_qeats/qeatsbackend/build/classes/java/main started by crio-user in /home/crio-user/hegdeabhinav7-me_qeats)
+2019-06-12 15:29:04.333  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : No active profile set, falling back to default profiles: default
+2019-06-12 15:29:05.688  INFO 18569 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-12 15:29:05.750  INFO 18569 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 3 repository interfaces.
+2019-06-12 15:29:06.217  INFO 18569 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-12 15:29:06.219  INFO 18569 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-12 15:29:06.219  INFO 18569 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-12 15:29:06.244  INFO 18569 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-06-12 15:29:06.244 DEBUG 18569 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-12 15:29:06.244  INFO 18569 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1907 ms
+2019-06-12 15:29:06.561  INFO 18569 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-12 15:29:06.755  INFO 18569 --- [cluster-ClusterId{value='5d00ccea76c727488947cf96', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:11}] to localhost:27017
+2019-06-12 15:29:06.763  INFO 18569 --- [cluster-ClusterId{value='5d00ccea76c727488947cf96', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1050241}
+2019-06-12 15:29:07.039  INFO 18569 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-12 15:29:07.045  WARN 18569 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restaurantController': Unsatisfied dependency expressed through field 'restaurantService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.crio.qeats.services.RestaurantService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-06-12 15:29:07.051  INFO 18569 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-06-12 15:29:07.072  INFO 18569 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-12 15:29:07.638 ERROR 18569 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restaurantService in com.crio.qeats.controller.RestaurantController required a bean of type 'com.crio.qeats.services.RestaurantService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.crio.qeats.services.RestaurantService' in your configuration.
+
+2019-06-12 15:29:10.674  INFO 23355 --- [restartedMain] com.crio.qeats.QEatsApplication          : Starting QEatsApplication on hegdeabhinav7 with PID 23355 (/home/crio-user/hegdeabhinav7-me_qeats/qeatsbackend/build/classes/java/main started by crio-user in /home/crio-user/hegdeabhinav7-me_qeats)
+2019-06-12 15:29:10.680  INFO 23355 --- [restartedMain] com.crio.qeats.QEatsApplication          : No active profile set, falling back to default profiles: default
+2019-06-12 15:29:10.906  INFO 23355 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-12 15:29:10.913  INFO 23355 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-12 15:29:14.043  INFO 23355 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-12 15:29:14.306  INFO 23355 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 215ms. Found 3 repository interfaces.
+2019-06-12 15:29:16.232  INFO 23355 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-12 15:29:16.306  INFO 23355 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-12 15:29:16.307  INFO 23355 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-12 15:29:16.799  INFO 23355 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-12 15:29:16.800 DEBUG 23355 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-12 15:29:16.801  INFO 23355 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5887 ms
+2019-06-12 15:29:17.751  INFO 23355 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-12 15:29:17.931  INFO 23355 --- [cluster-ClusterId{value='5d00ccf576c7275b3bc533ce', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:12}] to localhost:27017
+2019-06-12 15:29:17.951  INFO 23355 --- [cluster-ClusterId{value='5d00ccf576c7275b3bc533ce', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8591890}
+2019-06-12 15:29:18.794  WARN 23355 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-06-12 15:29:19.851 TRACE 23355 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.q.c.RestaurantController:
+	{GET /qeats/v1/restaurants}: getRestaurants(GetRestaurantsRequest)
+2019-06-12 15:29:19.875 TRACE 23355 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-06-12 15:29:19.888 TRACE 23355 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+2019-06-12 15:29:19.903 DEBUG 23355 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-06-12 15:29:20.040  INFO 23355 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-12 15:29:20.369  INFO 23355 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-06-12 15:29:20.476 TRACE 23355 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-06-12 15:29:20.477 DEBUG 23355 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-12 15:29:20.592  INFO 23355 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-12 15:29:20.671 DEBUG 23355 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-12 15:29:20.778 DEBUG 23355 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2019-06-12 15:29:20.790 TRACE 23355 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-06-12 15:29:20.796 TRACE 23355 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-06-12 15:29:20.797 DEBUG 23355 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-06-12 15:29:20.821 DEBUG 23355 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-12 15:29:21.444  INFO 23355 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-06-12 15:29:21.485  INFO 23355 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-06-12 15:29:21.541  INFO 23355 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-06-12 15:29:21.950  INFO 23355 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2019-06-12 15:29:21.966  INFO 23355 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2019-06-12 15:29:21.977  INFO 23355 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2019-06-12 15:29:22.243  INFO 23355 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-06-12 15:29:22.246  INFO 23355 --- [restartedMain] com.crio.qeats.QEatsApplication          : Started QEatsApplication in 12.948 seconds (JVM running for 14.537)
+2019-06-12 15:29:22.281  INFO 23355 --- [restartedMain] com.crio.qeats.QEatsApplication          : Congrats! Your QEatsApplication server has started
+2019-06-12 15:29:36.855  INFO 23355 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:29:36.856  INFO 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-12 15:29:36.857 TRACE 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@637f84fd
+2019-06-12 15:29:36.882 TRACE 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-06-12 15:29:36.887 TRACE 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-06-12 15:29:36.902 TRACE 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-06-12 15:29:36.923 TRACE 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-06-12 15:29:36.924 DEBUG 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-06-12 15:29:36.924  INFO 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 67 ms
+2019-06-12 15:29:37.036 TRACE 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=tamil", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:29:37.075 TRACE 23355 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 15:29:37.240 TRACE 23355 --- [http-nio-8081-exec-2] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=tamil)]
+2019-06-12 15:29:37.246  INFO 23355 --- [http-nio-8081-exec-2] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=tamil)
+2019-06-12 15:29:38.002  INFO 23355 --- [http-nio-8081-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:13}] to localhost:27017
+2019-06-12 15:29:43.496  INFO 23355 --- [http-nio-8081-exec-2] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@5c4cf749, com.crio.qeats.dto.Restaurant@38357eb5, com.crio.qeats.dto.Restaurant@47b64e79, com.crio.qeats.dto.Restaurant@646e68aa, com.crio.qeats.dto.Restaurant@5f232dd1, com.crio.qeats.dto.Restaurant@4cf02056, com.crio.qeats.dto.Restaurant@39407a37, com.crio.qeats.dto.Restaurant@2e7c7e8d, com.crio.qeats.dto.Restaurant@68f78336, com.crio.qeats.dto.Restaurant@2548ecee, com.crio.qeats.dto.Restaurant@1f63bbb2, com.crio.qeats.dto.Restaurant@52a636c5, com.crio.qeats.dto.Restaurant@69cf194, com.crio.qeats.dto.Restaurant@64d14235, com.crio.qeats.dto.Restaurant@66eddb36, com.crio.qeats.dto.Restaurant@51ec930, com.crio.qeats.dto.Restaurant@64ef8856, com.crio.qeats.dto.Restaurant@ac1be14, com.crio.qeats.dto.Restaurant@27de011, com.crio.qeats.dto.Restaurant@71d9ee27, com.crio.qeats.dto.Restaurant@69ec7572, com.crio.qeats.dto.Restaurant@6eda4745, com.crio.qeats.dto.Restaurant@3ca4fe7, com.crio.qeats.dto.Restaurant@3ddc216f, com.crio.qeats.dto.Restaurant@37118443, com.crio.qeats.dto.Restaurant@bcd1d8b, com.crio.qeats.dto.Restaurant@5aa9ce62, com.crio.qeats.dto.Restaurant@6a24b01, com.crio.qeats.dto.Restaurant@3daaf40a, com.crio.qeats.dto.Restaurant@5e688771, com.crio.qeats.dto.Restaurant@4aa68800, com.crio.qeats.dto.Restaurant@5ec83816, com.crio.qeats.dto.Restaurant@34288d61])
+2019-06-12 15:29:43.799 DEBUG 23355 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 15:29:43.801 TRACE 23355 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@5c4cf749, com.crio.qeats.dto.Restaurant@38357eb5, com.crio.qeats.dto.Restaurant@47b64e79, com.crio.qeats.dto.Restaurant@646e68aa, com.crio.qeats.dto.Restaurant@5f232dd1, com.crio.qeats.dto.Restaurant@4cf02056, com.crio.qeats.dto.Restaurant@39407a37, com.crio.qeats.dto.Restaurant@2e7c7e8d, com.crio.qeats.dto.Restaurant@68f78336, com.crio.qeats.dto.Restaurant@2548ecee, com.crio.qeats.dto.Restaurant@1f63bbb2, com.crio.qeats.dto.Restaurant@52a636c5, com.crio.qeats.dto.Restaurant@69cf194, com.crio.qeats.dto.Restaurant@64d14235, com.crio.qeats.dto.Restaurant@66eddb36, com.crio.qeats.dto.Restaurant@51ec930, com.crio.qeats.dto.Restaurant@64ef8856, com.crio.qeats.dto.Restaurant@ac1be14, com.crio.qeats.dto.Restaurant@27de011, com.crio.qeats.dto.Restaurant@71d9ee27, com.crio.qeats.dto.Restaurant@69ec7572, com.crio.qeats.dto.Restaurant@6eda4745, com.crio.qeats.dto.Restaurant@3ca4fe7, com.crio.qeats.dto.Restaurant@3ddc216f, com.crio.qeats.dto.Restaurant@37118443, com.crio.qeats.dto.Restaurant@bcd1d8b, com.crio.qeats.dto.Restaurant@5aa9ce62, com.crio.qeats.dto.Restaurant@6a24b01, com.crio.qeats.dto.Restaurant@3daaf40a, com.crio.qeats.dto.Restaurant@5e688771, com.crio.qeats.dto.Restaurant@4aa68800, com.crio.qeats.dto.Restaurant@5ec83816, com.crio.qeats.dto.Restaurant@34288d61])]
+2019-06-12 15:29:43.938 TRACE 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 15:29:43.939 DEBUG 23355 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 15:32:07.842 TRACE 23355 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=A2B", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:32:07.866 TRACE 23355 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 15:32:07.868 TRACE 23355 --- [http-nio-8081-exec-5] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=A2B)]
+2019-06-12 15:32:07.869  INFO 23355 --- [http-nio-8081-exec-5] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=A2B)
+2019-06-12 15:32:09.787  INFO 23355 --- [http-nio-8081-exec-5] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@6ae620af, com.crio.qeats.dto.Restaurant@554520e0, com.crio.qeats.dto.Restaurant@37fcf606, com.crio.qeats.dto.Restaurant@763b5cef, com.crio.qeats.dto.Restaurant@2d83f9df, com.crio.qeats.dto.Restaurant@51bd8eaf, com.crio.qeats.dto.Restaurant@1211e58, com.crio.qeats.dto.Restaurant@2dd1e6b7, com.crio.qeats.dto.Restaurant@1f2eafd3, com.crio.qeats.dto.Restaurant@22db826f, com.crio.qeats.dto.Restaurant@2b019bb2, com.crio.qeats.dto.Restaurant@947343b, com.crio.qeats.dto.Restaurant@63fd52f7, com.crio.qeats.dto.Restaurant@1d4b7c1d, com.crio.qeats.dto.Restaurant@3a30b80d, com.crio.qeats.dto.Restaurant@ae6b59c, com.crio.qeats.dto.Restaurant@38534dd, com.crio.qeats.dto.Restaurant@45e80b24, com.crio.qeats.dto.Restaurant@7aa73344, com.crio.qeats.dto.Restaurant@45d223d9, com.crio.qeats.dto.Restaurant@6fdbd462, com.crio.qeats.dto.Restaurant@6aef4396, com.crio.qeats.dto.Restaurant@2991709c, com.crio.qeats.dto.Restaurant@7d89429c, com.crio.qeats.dto.Restaurant@4c40f18b, com.crio.qeats.dto.Restaurant@5c23e866, com.crio.qeats.dto.Restaurant@7e1466ee, com.crio.qeats.dto.Restaurant@49be5612, com.crio.qeats.dto.Restaurant@2b93a07, com.crio.qeats.dto.Restaurant@419a92ee, com.crio.qeats.dto.Restaurant@1c64bf25, com.crio.qeats.dto.Restaurant@27d1747d, com.crio.qeats.dto.Restaurant@6cf30b82])
+2019-06-12 15:32:09.789 DEBUG 23355 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 15:32:09.791 TRACE 23355 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@6ae620af, com.crio.qeats.dto.Restaurant@554520e0, com.crio.qeats.dto.Restaurant@37fcf606, com.crio.qeats.dto.Restaurant@763b5cef, com.crio.qeats.dto.Restaurant@2d83f9df, com.crio.qeats.dto.Restaurant@51bd8eaf, com.crio.qeats.dto.Restaurant@1211e58, com.crio.qeats.dto.Restaurant@2dd1e6b7, com.crio.qeats.dto.Restaurant@1f2eafd3, com.crio.qeats.dto.Restaurant@22db826f, com.crio.qeats.dto.Restaurant@2b019bb2, com.crio.qeats.dto.Restaurant@947343b, com.crio.qeats.dto.Restaurant@63fd52f7, com.crio.qeats.dto.Restaurant@1d4b7c1d, com.crio.qeats.dto.Restaurant@3a30b80d, com.crio.qeats.dto.Restaurant@ae6b59c, com.crio.qeats.dto.Restaurant@38534dd, com.crio.qeats.dto.Restaurant@45e80b24, com.crio.qeats.dto.Restaurant@7aa73344, com.crio.qeats.dto.Restaurant@45d223d9, com.crio.qeats.dto.Restaurant@6fdbd462, com.crio.qeats.dto.Restaurant@6aef4396, com.crio.qeats.dto.Restaurant@2991709c, com.crio.qeats.dto.Restaurant@7d89429c, com.crio.qeats.dto.Restaurant@4c40f18b, com.crio.qeats.dto.Restaurant@5c23e866, com.crio.qeats.dto.Restaurant@7e1466ee, com.crio.qeats.dto.Restaurant@49be5612, com.crio.qeats.dto.Restaurant@2b93a07, com.crio.qeats.dto.Restaurant@419a92ee, com.crio.qeats.dto.Restaurant@1c64bf25, com.crio.qeats.dto.Restaurant@27d1747d, com.crio.qeats.dto.Restaurant@6cf30b82])]
+2019-06-12 15:32:09.888 TRACE 23355 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 15:32:09.888 DEBUG 23355 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 15:36:32.302 TRACE 23355 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=A2B", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:36:32.315 TRACE 23355 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 15:36:32.344 TRACE 23355 --- [http-nio-8081-exec-7] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=A2B)]
+2019-06-12 15:36:32.345  INFO 23355 --- [http-nio-8081-exec-7] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=A2B)
+2019-06-12 15:36:33.483  INFO 23355 --- [http-nio-8081-exec-7] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@28009c3e, com.crio.qeats.dto.Restaurant@540faa58, com.crio.qeats.dto.Restaurant@3f76c435, com.crio.qeats.dto.Restaurant@7f4ba3e3, com.crio.qeats.dto.Restaurant@53863158, com.crio.qeats.dto.Restaurant@7a721c1a, com.crio.qeats.dto.Restaurant@732c280d, com.crio.qeats.dto.Restaurant@51dac930, com.crio.qeats.dto.Restaurant@33342ea2, com.crio.qeats.dto.Restaurant@594c7612, com.crio.qeats.dto.Restaurant@4b324176, com.crio.qeats.dto.Restaurant@4ca68269, com.crio.qeats.dto.Restaurant@5e75e461, com.crio.qeats.dto.Restaurant@6433f55b, com.crio.qeats.dto.Restaurant@3d53215a, com.crio.qeats.dto.Restaurant@451e4953, com.crio.qeats.dto.Restaurant@34b9fb7d, com.crio.qeats.dto.Restaurant@4f5b599c, com.crio.qeats.dto.Restaurant@6b26e8dc, com.crio.qeats.dto.Restaurant@5cc5703a, com.crio.qeats.dto.Restaurant@27dc0acc, com.crio.qeats.dto.Restaurant@325e2012, com.crio.qeats.dto.Restaurant@6ee24e8d, com.crio.qeats.dto.Restaurant@19d1b7cb, com.crio.qeats.dto.Restaurant@5e9c4457, com.crio.qeats.dto.Restaurant@1d01a126, com.crio.qeats.dto.Restaurant@616b022d, com.crio.qeats.dto.Restaurant@75108e24, com.crio.qeats.dto.Restaurant@4912c22d, com.crio.qeats.dto.Restaurant@598a42b8, com.crio.qeats.dto.Restaurant@60c959ce, com.crio.qeats.dto.Restaurant@11599a5d, com.crio.qeats.dto.Restaurant@4e0521f1])
+2019-06-12 15:36:33.485 DEBUG 23355 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 15:36:33.487 TRACE 23355 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@28009c3e, com.crio.qeats.dto.Restaurant@540faa58, com.crio.qeats.dto.Restaurant@3f76c435, com.crio.qeats.dto.Restaurant@7f4ba3e3, com.crio.qeats.dto.Restaurant@53863158, com.crio.qeats.dto.Restaurant@7a721c1a, com.crio.qeats.dto.Restaurant@732c280d, com.crio.qeats.dto.Restaurant@51dac930, com.crio.qeats.dto.Restaurant@33342ea2, com.crio.qeats.dto.Restaurant@594c7612, com.crio.qeats.dto.Restaurant@4b324176, com.crio.qeats.dto.Restaurant@4ca68269, com.crio.qeats.dto.Restaurant@5e75e461, com.crio.qeats.dto.Restaurant@6433f55b, com.crio.qeats.dto.Restaurant@3d53215a, com.crio.qeats.dto.Restaurant@451e4953, com.crio.qeats.dto.Restaurant@34b9fb7d, com.crio.qeats.dto.Restaurant@4f5b599c, com.crio.qeats.dto.Restaurant@6b26e8dc, com.crio.qeats.dto.Restaurant@5cc5703a, com.crio.qeats.dto.Restaurant@27dc0acc, com.crio.qeats.dto.Restaurant@325e2012, com.crio.qeats.dto.Restaurant@6ee24e8d, com.crio.qeats.dto.Restaurant@19d1b7cb, com.crio.qeats.dto.Restaurant@5e9c4457, com.crio.qeats.dto.Restaurant@1d01a126, com.crio.qeats.dto.Restaurant@616b022d, com.crio.qeats.dto.Restaurant@75108e24, com.crio.qeats.dto.Restaurant@4912c22d, com.crio.qeats.dto.Restaurant@598a42b8, com.crio.qeats.dto.Restaurant@60c959ce, com.crio.qeats.dto.Restaurant@11599a5d, com.crio.qeats.dto.Restaurant@4e0521f1])]
+2019-06-12 15:36:33.490 TRACE 23355 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 15:36:33.491 DEBUG 23355 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 15:36:33.778 TRACE 23355 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:36:33.893 TRACE 23355 --- [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]] and 1 interceptors
+2019-06-12 15:36:34.101 TRACE 23355 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 15:36:34.102 DEBUG 23355 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 15:37:10.417 TRACE 23355 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:37:10.421 TRACE 23355 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 15:37:10.423 TRACE 23355 --- [http-nio-8081-exec-9] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=null)]
+2019-06-12 15:37:10.424  INFO 23355 --- [http-nio-8081-exec-9] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=null)
+2019-06-12 15:37:10.985  INFO 23355 --- [http-nio-8081-exec-9] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@19824db, com.crio.qeats.dto.Restaurant@501760ee, com.crio.qeats.dto.Restaurant@43087332, com.crio.qeats.dto.Restaurant@3a689a28, com.crio.qeats.dto.Restaurant@7a16df42, com.crio.qeats.dto.Restaurant@11edc0fe, com.crio.qeats.dto.Restaurant@117cb012, com.crio.qeats.dto.Restaurant@6fbbd1cf, com.crio.qeats.dto.Restaurant@231bffb5, com.crio.qeats.dto.Restaurant@5c8e2118, com.crio.qeats.dto.Restaurant@2886f6bb, com.crio.qeats.dto.Restaurant@19027fcd, com.crio.qeats.dto.Restaurant@6518cd0f, com.crio.qeats.dto.Restaurant@48b3b655, com.crio.qeats.dto.Restaurant@571fb2d6, com.crio.qeats.dto.Restaurant@5de953ef, com.crio.qeats.dto.Restaurant@7eba9de8, com.crio.qeats.dto.Restaurant@2bee8d74, com.crio.qeats.dto.Restaurant@1cd03dd, com.crio.qeats.dto.Restaurant@16ac4e20, com.crio.qeats.dto.Restaurant@3c53d4c0, com.crio.qeats.dto.Restaurant@63897b13, com.crio.qeats.dto.Restaurant@ab34f54, com.crio.qeats.dto.Restaurant@7e9acd6c, com.crio.qeats.dto.Restaurant@5ccde3ab, com.crio.qeats.dto.Restaurant@74b44ac2, com.crio.qeats.dto.Restaurant@646d72ef, com.crio.qeats.dto.Restaurant@4c3432a3, com.crio.qeats.dto.Restaurant@7f575035, com.crio.qeats.dto.Restaurant@29e3f747, com.crio.qeats.dto.Restaurant@2696129e, com.crio.qeats.dto.Restaurant@4bda9dc5, com.crio.qeats.dto.Restaurant@e49aa73])
+2019-06-12 15:37:10.988 DEBUG 23355 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 15:37:11.006 TRACE 23355 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@19824db, com.crio.qeats.dto.Restaurant@501760ee, com.crio.qeats.dto.Restaurant@43087332, com.crio.qeats.dto.Restaurant@3a689a28, com.crio.qeats.dto.Restaurant@7a16df42, com.crio.qeats.dto.Restaurant@11edc0fe, com.crio.qeats.dto.Restaurant@117cb012, com.crio.qeats.dto.Restaurant@6fbbd1cf, com.crio.qeats.dto.Restaurant@231bffb5, com.crio.qeats.dto.Restaurant@5c8e2118, com.crio.qeats.dto.Restaurant@2886f6bb, com.crio.qeats.dto.Restaurant@19027fcd, com.crio.qeats.dto.Restaurant@6518cd0f, com.crio.qeats.dto.Restaurant@48b3b655, com.crio.qeats.dto.Restaurant@571fb2d6, com.crio.qeats.dto.Restaurant@5de953ef, com.crio.qeats.dto.Restaurant@7eba9de8, com.crio.qeats.dto.Restaurant@2bee8d74, com.crio.qeats.dto.Restaurant@1cd03dd, com.crio.qeats.dto.Restaurant@16ac4e20, com.crio.qeats.dto.Restaurant@3c53d4c0, com.crio.qeats.dto.Restaurant@63897b13, com.crio.qeats.dto.Restaurant@ab34f54, com.crio.qeats.dto.Restaurant@7e9acd6c, com.crio.qeats.dto.Restaurant@5ccde3ab, com.crio.qeats.dto.Restaurant@74b44ac2, com.crio.qeats.dto.Restaurant@646d72ef, com.crio.qeats.dto.Restaurant@4c3432a3, com.crio.qeats.dto.Restaurant@7f575035, com.crio.qeats.dto.Restaurant@29e3f747, com.crio.qeats.dto.Restaurant@2696129e, com.crio.qeats.dto.Restaurant@4bda9dc5, com.crio.qeats.dto.Restaurant@e49aa73])]
+2019-06-12 15:37:11.013 TRACE 23355 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 15:37:11.014 DEBUG 23355 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 15:40:30.275 TRACE 23355 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v2/restaurants?latitude=28.4900591&longitude=77.536386", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:40:30.287 TRACE 23355 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]] and 4 interceptors
+2019-06-12 15:40:30.290 DEBUG 23355 --- [http-nio-8081-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-06-12 15:40:30.293 TRACE 23355 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 15:40:30.293 DEBUG 23355 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={}
+2019-06-12 15:40:30.388 TRACE 23355 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?latitude=28.4900591&longitude=77.536386", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:40:30.402 TRACE 23355 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+2019-06-12 15:40:30.405 TRACE 23355 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-12 15:40:30.408 TRACE 23355 --- [http-nio-8081-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@79a33d4c, org.apache.catalina.connector.ResponseFacade@436a5662]
+2019-06-12 15:40:30.508 DEBUG 23355 --- [http-nio-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2019-06-12 15:40:30.512 TRACE 23355 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@4be650d8] 
+2019-06-12 15:40:30.565 DEBUG 23355 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={}
+2019-06-12 15:40:40.309 TRACE 23355 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v2/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=A2B", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:40:40.312 TRACE 23355 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]] and 4 interceptors
+2019-06-12 15:40:40.327 DEBUG 23355 --- [http-nio-8081-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-06-12 15:40:40.328 TRACE 23355 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 15:40:40.328 DEBUG 23355 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={}
+2019-06-12 15:40:40.329 TRACE 23355 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?latitude=28.4900591&longitude=77.536386&searchFor=A2B", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:40:40.335 TRACE 23355 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+2019-06-12 15:40:40.336 TRACE 23355 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-12 15:40:40.341 TRACE 23355 --- [http-nio-8081-exec-5] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@6c111a77, org.apache.catalina.connector.ResponseFacade@18cab36c]
+2019-06-12 15:40:40.348 TRACE 23355 --- [http-nio-8081-exec-5] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2019-06-12 15:40:40.349 DEBUG 23355 --- [http-nio-8081-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2019-06-12 15:40:40.349 TRACE 23355 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@4be650d8] 
+2019-06-12 15:40:40.349 DEBUG 23355 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={}
+2019-06-12 15:40:44.627 TRACE 23355 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=A2B", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:40:44.629 TRACE 23355 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 15:40:44.631 TRACE 23355 --- [http-nio-8081-exec-6] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=A2B)]
+2019-06-12 15:40:44.634  INFO 23355 --- [http-nio-8081-exec-6] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=A2B)
+2019-06-12 15:40:45.086  INFO 23355 --- [http-nio-8081-exec-6] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@3fce3999, com.crio.qeats.dto.Restaurant@3564d7ac, com.crio.qeats.dto.Restaurant@7b08f257, com.crio.qeats.dto.Restaurant@1e37c57a, com.crio.qeats.dto.Restaurant@507b35d4, com.crio.qeats.dto.Restaurant@433151c0, com.crio.qeats.dto.Restaurant@7f9799bb, com.crio.qeats.dto.Restaurant@5f2b8f26, com.crio.qeats.dto.Restaurant@5677c482, com.crio.qeats.dto.Restaurant@1f8130dd, com.crio.qeats.dto.Restaurant@5c9838d7, com.crio.qeats.dto.Restaurant@5fc9cedd, com.crio.qeats.dto.Restaurant@37f25272, com.crio.qeats.dto.Restaurant@21639b89, com.crio.qeats.dto.Restaurant@3c2041f2, com.crio.qeats.dto.Restaurant@2d0edf8d, com.crio.qeats.dto.Restaurant@84a699c, com.crio.qeats.dto.Restaurant@35c814cf, com.crio.qeats.dto.Restaurant@bd9fc55, com.crio.qeats.dto.Restaurant@50f0a814, com.crio.qeats.dto.Restaurant@b2d2d1f, com.crio.qeats.dto.Restaurant@7eb63ed9, com.crio.qeats.dto.Restaurant@3ac95e0e, com.crio.qeats.dto.Restaurant@6face14b, com.crio.qeats.dto.Restaurant@d0b6c74, com.crio.qeats.dto.Restaurant@4284dbfa, com.crio.qeats.dto.Restaurant@32cdd48a, com.crio.qeats.dto.Restaurant@3ae3dd21, com.crio.qeats.dto.Restaurant@6cdd7ec5, com.crio.qeats.dto.Restaurant@86223af, com.crio.qeats.dto.Restaurant@54d7dfad, com.crio.qeats.dto.Restaurant@70f90ac3, com.crio.qeats.dto.Restaurant@7755794f])
+2019-06-12 15:40:45.091 DEBUG 23355 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 15:40:45.092 TRACE 23355 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@3fce3999, com.crio.qeats.dto.Restaurant@3564d7ac, com.crio.qeats.dto.Restaurant@7b08f257, com.crio.qeats.dto.Restaurant@1e37c57a, com.crio.qeats.dto.Restaurant@507b35d4, com.crio.qeats.dto.Restaurant@433151c0, com.crio.qeats.dto.Restaurant@7f9799bb, com.crio.qeats.dto.Restaurant@5f2b8f26, com.crio.qeats.dto.Restaurant@5677c482, com.crio.qeats.dto.Restaurant@1f8130dd, com.crio.qeats.dto.Restaurant@5c9838d7, com.crio.qeats.dto.Restaurant@5fc9cedd, com.crio.qeats.dto.Restaurant@37f25272, com.crio.qeats.dto.Restaurant@21639b89, com.crio.qeats.dto.Restaurant@3c2041f2, com.crio.qeats.dto.Restaurant@2d0edf8d, com.crio.qeats.dto.Restaurant@84a699c, com.crio.qeats.dto.Restaurant@35c814cf, com.crio.qeats.dto.Restaurant@bd9fc55, com.crio.qeats.dto.Restaurant@50f0a814, com.crio.qeats.dto.Restaurant@b2d2d1f, com.crio.qeats.dto.Restaurant@7eb63ed9, com.crio.qeats.dto.Restaurant@3ac95e0e, com.crio.qeats.dto.Restaurant@6face14b, com.crio.qeats.dto.Restaurant@d0b6c74, com.crio.qeats.dto.Restaurant@4284dbfa, com.crio.qeats.dto.Restaurant@32cdd48a, com.crio.qeats.dto.Restaurant@3ae3dd21, com.crio.qeats.dto.Restaurant@6cdd7ec5, com.crio.qeats.dto.Restaurant@86223af, com.crio.qeats.dto.Restaurant@54d7dfad, com.crio.qeats.dto.Restaurant@70f90ac3, com.crio.qeats.dto.Restaurant@7755794f])]
+2019-06-12 15:40:45.111 TRACE 23355 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 15:40:45.112 DEBUG 23355 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 15:40:51.142 TRACE 23355 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/qeats/v1/restaurants?latitude=28.4900591&longitude=77.536386&searchFor=tamsad", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-06-12 15:40:51.144 TRACE 23355 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.crio.qeats.exchanges.GetRestaurantsResponse> com.crio.qeats.controller.RestaurantController.getRestaurants(com.crio.qeats.exchanges.GetRestaurantsRequest)
+2019-06-12 15:40:51.145 TRACE 23355 --- [http-nio-8081-exec-8] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=tamsad)]
+2019-06-12 15:40:51.145  INFO 23355 --- [http-nio-8081-exec-8] c.c.q.controller.RestaurantController    : getRestaurants called with GetRestaurantsRequest(latitude=28.4900591, longitude=77.536386, searchFor=tamsad)
+2019-06-12 15:40:51.787  INFO 23355 --- [http-nio-8081-exec-8] c.c.q.controller.RestaurantController    : getRestaurants returned GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@40a196a4, com.crio.qeats.dto.Restaurant@47737c2d, com.crio.qeats.dto.Restaurant@4e582bbe, com.crio.qeats.dto.Restaurant@39d6f2d7, com.crio.qeats.dto.Restaurant@750e47ff, com.crio.qeats.dto.Restaurant@2940cf67, com.crio.qeats.dto.Restaurant@26ca042a, com.crio.qeats.dto.Restaurant@28840a6e, com.crio.qeats.dto.Restaurant@2fb2813e, com.crio.qeats.dto.Restaurant@264858, com.crio.qeats.dto.Restaurant@76bbe722, com.crio.qeats.dto.Restaurant@7e6454e1, com.crio.qeats.dto.Restaurant@45648162, com.crio.qeats.dto.Restaurant@77b2651e, com.crio.qeats.dto.Restaurant@5e190e3d, com.crio.qeats.dto.Restaurant@2068a43, com.crio.qeats.dto.Restaurant@630874f0, com.crio.qeats.dto.Restaurant@7f6771a, com.crio.qeats.dto.Restaurant@1188f93f, com.crio.qeats.dto.Restaurant@27ea3ddf, com.crio.qeats.dto.Restaurant@7656226, com.crio.qeats.dto.Restaurant@339f8b77, com.crio.qeats.dto.Restaurant@6588dd3a, com.crio.qeats.dto.Restaurant@13fa0091, com.crio.qeats.dto.Restaurant@3fa2349a, com.crio.qeats.dto.Restaurant@7029d42a, com.crio.qeats.dto.Restaurant@53eba618, com.crio.qeats.dto.Restaurant@1056da7c, com.crio.qeats.dto.Restaurant@3efe3a08, com.crio.qeats.dto.Restaurant@c82179, com.crio.qeats.dto.Restaurant@e1d9c1e, com.crio.qeats.dto.Restaurant@283e229b, com.crio.qeats.dto.Restaurant@675f63ee])
+2019-06-12 15:40:51.789 DEBUG 23355 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-06-12 15:40:51.790 TRACE 23355 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [GetRestaurantsResponse(restaurants=[com.crio.qeats.dto.Restaurant@40a196a4, com.crio.qeats.dto.Restaurant@47737c2d, com.crio.qeats.dto.Restaurant@4e582bbe, com.crio.qeats.dto.Restaurant@39d6f2d7, com.crio.qeats.dto.Restaurant@750e47ff, com.crio.qeats.dto.Restaurant@2940cf67, com.crio.qeats.dto.Restaurant@26ca042a, com.crio.qeats.dto.Restaurant@28840a6e, com.crio.qeats.dto.Restaurant@2fb2813e, com.crio.qeats.dto.Restaurant@264858, com.crio.qeats.dto.Restaurant@76bbe722, com.crio.qeats.dto.Restaurant@7e6454e1, com.crio.qeats.dto.Restaurant@45648162, com.crio.qeats.dto.Restaurant@77b2651e, com.crio.qeats.dto.Restaurant@5e190e3d, com.crio.qeats.dto.Restaurant@2068a43, com.crio.qeats.dto.Restaurant@630874f0, com.crio.qeats.dto.Restaurant@7f6771a, com.crio.qeats.dto.Restaurant@1188f93f, com.crio.qeats.dto.Restaurant@27ea3ddf, com.crio.qeats.dto.Restaurant@7656226, com.crio.qeats.dto.Restaurant@339f8b77, com.crio.qeats.dto.Restaurant@6588dd3a, com.crio.qeats.dto.Restaurant@13fa0091, com.crio.qeats.dto.Restaurant@3fa2349a, com.crio.qeats.dto.Restaurant@7029d42a, com.crio.qeats.dto.Restaurant@53eba618, com.crio.qeats.dto.Restaurant@1056da7c, com.crio.qeats.dto.Restaurant@3efe3a08, com.crio.qeats.dto.Restaurant@c82179, com.crio.qeats.dto.Restaurant@e1d9c1e, com.crio.qeats.dto.Restaurant@283e229b, com.crio.qeats.dto.Restaurant@675f63ee])]
+2019-06-12 15:40:51.795 TRACE 23355 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2019-06-12 15:40:51.799 DEBUG 23355 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2019-06-12 16:26:11.379  INFO 23355 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-12 16:26:11.566  INFO 23355 --- [Thread-1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:13}] to localhost:27017 because the pool has been closed.
+2019-06-12 16:26:12.004  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : Starting QEatsApplication on hegdeabhinav7 with PID 18569 (started by crio-user in /home/crio-user/hegdeabhinav7-me_qeats)
+2019-06-12 16:26:12.011  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : No active profile set, falling back to default profiles: default
+2019-06-12 16:26:14.247  INFO 23355 --- [restartedMain] com.crio.qeats.QEatsApplication          : Starting QEatsApplication on hegdeabhinav7 with PID 23355 (started by crio-user in /home/crio-user/hegdeabhinav7-me_qeats)
+2019-06-12 16:26:14.315  INFO 23355 --- [restartedMain] com.crio.qeats.QEatsApplication          : No active profile set, falling back to default profiles: default
+2019-06-12 16:26:16.904  INFO 18569 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-12 16:26:17.023  INFO 18569 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69ms. Found 0 repository interfaces.
+2019-06-12 16:26:20.173  INFO 18569 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-12 16:26:20.245  INFO 18569 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-12 16:26:20.246  INFO 18569 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-12 16:26:20.371  INFO 23355 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-12 16:26:20.405  INFO 23355 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
+2019-06-12 16:26:20.601  INFO 18569 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-06-12 16:26:20.601 DEBUG 18569 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-12 16:26:20.601  INFO 18569 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8579 ms
+2019-06-12 16:26:21.097  INFO 18569 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-12 16:26:22.243 TRACE 18569 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-06-12 16:26:22.244 DEBUG 18569 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-12 16:26:22.530  INFO 18569 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-12 16:26:22.557 DEBUG 18569 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-12 16:26:22.582 TRACE 18569 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+2019-06-12 16:26:22.603 DEBUG 18569 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2019-06-12 16:26:22.608 DEBUG 18569 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2019-06-12 16:26:22.619 TRACE 18569 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-06-12 16:26:22.651 TRACE 18569 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-06-12 16:26:22.651 DEBUG 18569 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-06-12 16:26:22.691 DEBUG 18569 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-12 16:26:23.134  INFO 18569 --- [cluster-ClusterId{value='5d00da5576c727488947cf97', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:14}] to localhost:27017
+2019-06-12 16:26:23.375  INFO 18569 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-12 16:26:23.381  INFO 18569 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-12 16:26:23.399  INFO 18569 --- [cluster-ClusterId{value='5d00da5576c727488947cf97', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=28172803}
+2019-06-12 16:26:23.555  INFO 18569 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-06-12 16:26:23.612  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : Started QEatsApplication in 12.036 seconds (JVM running for 9639.576)
+2019-06-12 16:26:23.929  INFO 18569 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-06-12 16:26:23.931  INFO 18569 --- [restartedMain] com.crio.qeats.QEatsApplication          : Congrats! Your QEatsApplication server has started
+2019-06-12 16:26:25.331  INFO 23355 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-12 16:26:25.922  INFO 23355 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-12 16:26:26.003  INFO 23355 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-12 16:26:26.557  INFO 23355 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-12 16:26:26.557 DEBUG 23355 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-12 16:26:26.557  INFO 23355 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12206 ms
+2019-06-12 16:26:27.090  INFO 23355 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-12 16:26:27.870 TRACE 23355 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-06-12 16:26:27.871 DEBUG 23355 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-12 16:26:28.027  INFO 23355 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-12 16:26:28.061 DEBUG 23355 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-12 16:26:28.092 TRACE 23355 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+2019-06-12 16:26:28.099 DEBUG 23355 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2019-06-12 16:26:28.104 DEBUG 23355 --- [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2019-06-12 16:26:28.108 TRACE 23355 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-06-12 16:26:28.109 TRACE 23355 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-06-12 16:26:28.109 DEBUG 23355 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-06-12 16:26:28.119 DEBUG 23355 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-12 16:26:28.544  WARN 23355 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-06-12 16:26:28.552  INFO 23355 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-12 16:26:28.778  INFO 23355 --- [cluster-ClusterId{value='5d00da5b76c7275b3bc533cf', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:15}] to localhost:27017
+2019-06-12 16:26:28.783  INFO 23355 --- [cluster-ClusterId{value='5d00da5b76c7275b3bc533cf', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 3]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=613704}
+2019-06-12 16:26:29.721 ERROR 23355 --- [restartedMain] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8081]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.crio.qeats.QEatsApplication.main(QEatsApplication.java:17) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_212]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_212]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_212]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_212]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_212]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_212]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_212]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_212]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_212]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	... 19 common frames omitted
+
+2019-06-12 16:26:29.753  INFO 23355 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-06-12 16:26:30.229  WARN 23355 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='5d00da5b76c7275b3bc533cf', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.lang.Thread.run(Thread.java:748)
+2019-06-12 16:26:30.230  WARN 23355 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [CleanCursors-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019-06-12 16:26:30.755  INFO 23355 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-12 16:26:30.926 ERROR 23355 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2019-06-12 16:26:31.130  INFO 23355 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

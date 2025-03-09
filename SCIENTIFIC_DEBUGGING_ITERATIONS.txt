@@ -1,0 +1,43 @@
+Iteration 1:
+
+Initial Observation:
+
+After Running the RestaurantAutoWiringTest.java, an Error is observed that says no parameterResolver is registered for the parameter objectMapper in the method serializeAndDeserializeRestaurantJson
+
+Hypotheses:
+
+On observing the parameter objectMapper, I notice that there is an annotation @Autowired preceding the parameter, therefore this implies that this object is being injected from some other file
+
+Prediction:
+
+Possiblity of the ObjectMapper class not being in SpringContext which is resulting in this object to not be injected
+
+Experiment:
+
+I thought of adding the @SpringBootApplication on top of the definition of the ObjectMapper class, but then I realized that this is a library not defined by us
+
+Observation & Iterate:
+
+Since there is no possibility of modifying the objectMapper file. I look at what parameterResolver actually is.
+
+Iteration 2:
+
+Initial Observation:
+
+ParameterResolver is the API to resolve the parameters dynamically at runtime. SpringExtension class consists of the implementation of this interface
+
+Hypotheses:
+
+The ObjectMapper object is being injected as a parameter to serializeAndDeserializeRestaurantJson at runTime, therefore we need to use SpringExtension class to be able correctly inject the object.
+
+Prediction:
+
+Use the @SpringBootTest annotation which creates the Application Context in our tests. The annotation @ExtendWith(SpringExtension.class) is already annotated within the @SpringBootTest in JUnit5. This is the class that will help us to dynamically inject the dependency onto the test method.
+
+Experiment:
+
+I add the above mentioned annotation to the RestaurantAutowiringTest class
+
+Observation:
+
+The parameter has been resolved and the serialization and deserialization through objectMapper has been successful
